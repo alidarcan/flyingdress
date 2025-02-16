@@ -1,0 +1,9 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^flyingdressphoto.istanbul
+RewriteRule (.*) https://www.flyingdressphoto.istanbul/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.flyingdressphoto.istanbul/$1 [R,L]
